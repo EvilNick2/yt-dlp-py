@@ -55,8 +55,8 @@ def getffmpeg():
 if __name__ == "__main__":
 	getffmpeg()
 	if os.path.exists("backend/urls.txt") == False:
-		f = open("backend/urls.txt", "w")
-		f.write("# Paste your video/playlist URLs in this file, save and close")
+		with open('backend.urls.txt', 'w') as file:
+			file.write('# Paste your video/playlist URLs in this file, save and close')
 	
 	# URL = ["https://www.youtube.com/watch?v=eMFOUl_n-yQ"]
 

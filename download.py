@@ -122,7 +122,6 @@ if __name__ == "__main__":
             break
         with open('backend/urls.txt', 'a') as file:
             file.write(url + '\n')
-            URLS.append(url)
 
     # Read URLs from the file, ignoring the first line
     with open('backend/urls.txt', 'r') as file:
